@@ -1,29 +1,40 @@
 <p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Title</h5>
+      <p class="card-text"><%= @bug.title %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @bug.title %>
-</p>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Description</h5>
+      <p class="card-text"><%= @bug.description %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @bug.description %>
-</p>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Issue Type</h5>
+      <p class="card-text"><%= @bug.issue_type %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Issue type:</strong>
-  <%= @bug.issue_type %>
-</p>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Priority</h5>
+      <p class="card-text"><%= @bug.priority %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Priority:</strong>
-  <%= @bug.priority %>
-</p>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Status</h5>
+      <p class="card-text"><%= @bug.status %></p>
+    </div>
+  </div>
 
-<p>
-  <strong>Status:</strong>
-  <%= @bug.status %>
-</p>
-
-<%= link_to 'Edit', edit_bug_path(@bug) %> |
-<%= link_to 'Back', bugs_path %>
+  <%= link_to 'Edit', edit_bug_path(@bug) %> |
+  <%= link_to 'Back', bugs_path %>
+</div>

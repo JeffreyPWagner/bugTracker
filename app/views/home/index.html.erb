@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <h2>Most recent bugs:</h2>
+  <% @bugs.each do |bug| %>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><%= bug.title%></h2>
+        <p class="card-text"><%=bug.description.truncate_words(30)%></p>
+        
+        <%= link_to 'Read more &raquo;'.html_safe, bug, class: "card-link"%>
+
+      </div>
+    </div>
+  <% end %>
+</div> 
