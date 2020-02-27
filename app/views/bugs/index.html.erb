@@ -1,8 +1,10 @@
+<%= javascript_pack_tag 'bugSort' %>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Bugs</h1>
 <div class="table-responsive">
-  <table class="table-striped w-100">
+  <table id="bugTable" class="table-striped w-100">
     <thead>
       <tr>
         <th >User</th>
@@ -36,3 +38,5 @@
 <br>
 
 <%= link_to 'New Bug', new_bug_path %>
+
+<%= javascript_pack_tag 'bugSort', 'data-turbolinks-track': 'reload' %>
